@@ -1,3 +1,11 @@
+<img width="512" height="397" alt="image" src="https://github.com/user-attachments/assets/ba8d8f4a-61f1-4bc9-8d12-3a28cd51e976" />
+
+<img width="863" height="301" alt="image" src="https://github.com/user-attachments/assets/7e96cb05-7425-4d0c-8dbb-992c97441c30" />
+
+
+
+
+
 # Market Signal → Portfolio Recommendation Agent
 
 
