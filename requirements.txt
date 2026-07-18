@@ -1,0 +1,16 @@
+
+# LLM client (NVIDIA Nemotron via OpenAI-compatible API)
+openai>=1.30.0
+python-dotenv>=1.0.0
+
+# Agentic orchestration
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# AgentQL (by TinyFish) + HTTP
+requests>=2.31.0
+
+# Web UI
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+jinja2>=3.1.0

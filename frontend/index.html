@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pravar.AI · Market Signal → Portfolio Agent</title>
+<link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+<header>
+  <h1>Pravar.AI</h1>
+  <span class="tag">Market Signal → Portfolio Recommendation Agent</span>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="grow">
+      <label for="field">Market field</label>
+      <select id="field" class="grow"></select>
+    </div>
+    <div class="grow">
+      <label for="url">News source URL (optional)</label>
+      <input id="url" placeholder="defaults to Economic Times markets"/>
+    </div>
+    <label class="chk" title="Use cached sample events instead of a live AgentQL call">
+      <input type="checkbox" id="mock"/> use cached news
+    </label>
+  </div>
+
+  <!-- Two-step action bar -->
+  <div class="steps">
+    <button id="btnFetch" class="btn primary" onclick="fetchNews()">
+      <span class="num">1</span> Fetch news (AgentQL)
+    </button>
+    <span class="arrow">→</span>
+    <button id="btnAnalyze" class="btn" onclick="analyze()" disabled>
+      <span class="num">2</span> Analyze &amp; recommend
+    </button>
+    <span id="status" class="status"></span>
+  </div>
+
+  <div id="fetchlog" class="fetchlog" style="display:none"></div>
+  <div id="event"></div>
+  <div id="alerts"></div>
+  <div id="trace"></div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

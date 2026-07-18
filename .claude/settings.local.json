@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk -F',' '{print $1\", \"$2}')",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.agentql.com)",
+      "WebFetch(domain:www.agentql.com)",
+      "Bash(cat .env.example)",
+      "Bash(cat llm_client.py)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(python -m src.data)",
+      "Bash(python -m pip install -r requirements.txt)",
+      "Bash(python -m src.tinyfish_client)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import src.config, src.data, src.tinyfish_client, src.prompts, src.validate, src.graph, src.app; import main, run; print\\('All modules import OK'\\)\")",
+      "Bash(timeout 120 python -c ' *)",
+      "Bash(timeout 150 python -c ' *)",
+      "Bash(timeout 300 python -c ' *)",
+      "Bash(timeout 300 python -u -c ' *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(timeout 200 python -u -c ' *)",
+      "Bash(nslookup api.agentql.com)",
+      "Bash(ping -n 1 api.agentql.com)",
+      "Bash(timeout 60 python -u -c ' *)",
+      "Bash(timeout 120 python -u -c ' *)",
+      "Bash(timeout 90 python -u -c ' *)",
+      "Bash(cat _r.log)",
+      "Bash(rm -f _r.log)",
+      "Bash(timeout 180 python -u -c ' *)",
+      "Bash(timeout 150 python -u -c ' *)",
+      "Bash(git mv *)",
+      "Bash(echo \"=== exit $? \\(1 = none found, good\\) ===\")",
+      "Bash(python scratch_make_excalidraw.py)",
+      "Bash(rm scratch_make_excalidraw.py)"
+    ]
+  }
+}
